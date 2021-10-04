@@ -1,0 +1,556 @@
+/* @font-face {
+  font-family: 'Open Sans' sans-serif;
+  font-weight: normal;
+  font-display:swap;
+  src: url("../fonts/OpenSans-Bold.woff" ),
+  url("../fonts/OpenSans-Bold.woff2" ), 
+  url("../fonts/OpenSans-Regular.woff" ),
+  url("../fonts/OpenSans-Regular.woff2" );
+} */
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  'Open Sans', sans-serif;
+  /* border: solid 1px black; */
+}
+.container{
+  width: 1345px;
+  height: 3021px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 62px;
+}
+.main-section{
+  width: 100%;
+  height: 2955px;
+  padding: 0  81px 0 81px;
+}
+.header-page{   /*header page  boshlani+shi */
+  width: 100%;
+  height: 399px;
+  display: flex;
+  margin-top: 95px;
+}
+.header-page-heading{  /*sarlavhaning boshlanishi  header-page-heading*/
+  width: 55%;
+  height: 100%;
+  padding-top: 67px;
+  padding-right: 155px;
+}
+.heading-text{
+  font-size:30px;
+  font-weight: 700;
+  font-family:  'OpenSans-Regular', 'Open Sans' sans-serif;
+}
+.heading-title{
+  font-size:17px;
+  margin-top:17px;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+.header-page-heading a{
+  text-decoration: none;
+}
+.header-page-heading a p{
+  width: 200px;
+  height: 35px;
+  margin-top: 43px;
+  padding-top: 9px;
+  border-radius: 7px;
+  text-align: center;
+  color: white;
+  background-color: #00BAFC;
+  transition: 0.5s;
+}
+.header-page-heading a p:hover{
+  color:  #00BAFC;
+  background-color:  white ;
+}
+
+iframe{
+  margin: 80px 45px 80px 45px;
+}
+  
+nav{
+  width: 100%;
+  height: 61px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 4px 0 13px black;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.nav-container{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 1171px; */
+  min-width: 1171px;
+  align-items: center;
+  justify-content: space-between;
+ 
+
+}
+nav ul{
+  width: 65%;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+nav ul li {
+  margin-top: 17px;
+  
+}
+nav ul li a{
+  font-size: 15px;
+  font-family: 'Open Sans' sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+nav ul .active-block {
+  width: 159px;
+  height: 39px;
+  margin-top: 7px;
+  border-radius: 7px;
+  background-color: #00BAFC;
+  text-align: center;
+  padding-top: 9px;
+}
+nav ul .active-block a{
+  padding-top: 7px;
+  color: white;
+  font-weight: 700;
+}
+nav ul .active-block:hover{
+  box-shadow: 0 0 5px black;
+  color: white;
+  
+}
+
+nav ul li .non-active:hover{
+ color:#00BAFC;
+}
+
+.xizmatlar-page{ /*xizmatlar page ni boshlanishi */
+  width: 100%;
+  height: 871px;
+  display: flex;
+  flex-direction: column;
+  }
+.xizmatlar-heading-box{
+  width: 100%;
+  height: 105px;
+  margin-top: 19px;
+  padding-left:235px;
+  padding-right:235px;
+  text-align: center;
+  line-height: 1.5em;
+}
+.xizmatlar-heading-box .xizmat-heading{
+  font-size: 25px;
+  font-weight: 700;
+}
+.xizmatlar-heading-box .xizmat-heading-text{
+  font-size:17px;
+  font-weight:500 ;
+  margin-top: 15px;
+  line-height:1.5em;
+}
+.xizmatlar-cards{
+  width: 100%;
+  height: 625px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.xizmatlar-cards .card-row1{
+  width: 100%;
+  height: 279px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.card-row1 div{
+  width:333px;
+  height:279px;
+  padding-top: 13px;
+  border-radius: 9px;
+  box-shadow: 0 0 13px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+}
+/* card  shadow  here */
+.card-row1 div:hover{
+  box-shadow: 0 0 23px rgba(0, 0, 0, 0.795);
+}
+.xizmatlar-cards .card-row2{
+  width: 815px;
+  height: 275px;
+  margin-top: 49px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.card-row2 div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:320px;
+  height:260px;
+  border-radius: 9px;
+  box-shadow: 0 0 13px black;
+  transition: 0.3s;
+}
+.card-row2 div:hover{
+  box-shadow: 0 0 23px rgba(0, 0, 0, 0.795);
+}
+.card-row2 img{
+  margin-top:7px;
+  margin-right: auto;
+  margin-left:auto;
+  
+}
+.card-heading{
+  font-size: 21px;
+  font-weight: 700;
+  margin-top: 13px;
+}
+.card-heading-title{
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.xizmatlar-btn{   /*-------------------------------*/
+  width: 100%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 55px;
+}
+.xizmatlar-btn .xizmat-btn1{
+  text-decoration: none;
+}
+.xizmatlar-btn .xizmat-btn1 p{
+  width: 200px;
+  height: 35px;
+  border-radius: 9px;
+  padding-top: 5px;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  background-color:#00BAFC;
+}
+.xizmatlar-btn .xizmat-btn1 p:hover{
+  background-color: white;
+  color: #00BAFC;
+}
+.xizmatlar-btn .xizmat-btn2 p{
+  width: 235px;
+  height: 35px;
+  margin-left: 17px;
+  padding-top: 9px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #00BAFC;
+  text-align: center;
+}
+.xizmatlar-btn .xizmat-btn2{
+  color: #00BAFC;
+}
+
+.introduce-page{  /* introduce  page boshlanishi*/
+  width: 100%;
+  height: auto;
+}
+.introduce-heading{
+  width: 100%;
+  height: 115px;
+  margin-top: 35px;
+  padding: 15px 215px 0 215px;
+  text-align: center;
+}
+.introduce-heading-text{
+  font-size:25px ;
+  font-weight: 700;
+}
+.introduce-heading-title{
+  margin-top: 19px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+.introduce-page .intro-cards-list{
+  width: 100%;
+  height: auto;
+  margin-top: 35px;
+  list-style: armenian;
+  display: flex;
+  flex-direction: column;
+}
+.introduce-page .intro-cards-list li{
+width: 100%;
+height: auto;
+margin-top: 19px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.intro-cards-list li .card-text1{
+width:65%;
+height: 95px;
+margin-top: auto;
+margin-bottom: auto;
+padding-left: 11px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: space-around;
+}
+.intro-cards-list li .card-text2{
+  width:65%;
+  height: 95px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  }
+
+.intro-cards-list li div .intro-card-heading{
+  font-size: 23px;
+  font-weight:700;
+}
+.intro-cards-list li div .intro-card-heading-title{
+  font-size: 19px;
+  font-weight: 500;
+}
+  
+
+
+/*button*/
+.btn3{
+  width: 215px;
+  height: auto;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.introduce-btn1 p:hover{
+  color: #00BAFC;
+  background-color: white;
+}
+.introduce-btn1 {
+  text-decoration: none;
+}
+.introduce-btn1 p{
+  width: 200px;
+  height: 35px;
+  margin-top: 25px;
+  padding-top: 9px;
+  border-radius: 7px;
+  text-align: center;
+  color: white;
+  background-color: #00BAFC;
+  transition: 0.3s;
+}
+
+
+/* buyurtma berish  section boshlanishi */
+.buyurtma-berish-section{
+  width: 100%;
+  height: 605px;
+  background-color: #00BAFC;
+}
+.buyurtma-heading{
+  width: 100%;
+  height: 75px;
+  margin-top:5px;
+}
+.form-section{
+  width:348px ;
+  height:338px ;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 7px;
+  background-color: white;
+}
+.buyurtma-heading{
+  width: 100%;
+  min-width: 1171px;
+  padding-top: 15px;
+  padding-left: 275px;
+  padding-right: 275px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.buyurtma-berish-heading{
+  font-size: 23px;
+  font-weight: 700;
+ 
+}
+.buyurtma-berish-text{
+  font-size: 17px;
+  font-weight: 500;
+  padding-top: 13px;
+  text-align: center;
+}
+form{
+  display: flex;
+  margin-top: 45px;
+  flex-direction: column;
+  justify-content: center;
+}
+input{
+width: 277px;
+height: 55px;
+margin-top: 21px;
+margin-right: auto;
+margin-left: auto;
+background-color:#F3F3F3 ;
+border: none;
+padding-left: 15px;
+}
+select{
+  width: 277px;
+  height: 55px;
+  margin-top: 21px;
+  margin-right: auto;
+  margin-left: auto;
+  border: none;
+  background-color:#F3F3F3 ;
+
+}
+button{
+  width: 201px;
+  height: 55px;
+  margin-top: 21px;
+  margin-right: auto;
+  margin-left: auto;
+  border: none;
+  border-radius: 9px;
+  background-color:#00BAFC ;
+}
+
+
+
+
+/* footer qismi boshlanishi */
+footer{
+  width: 100%;
+  height: 355px;
+  display: flex;
+  position: sticky;
+  z-index: 1;
+  padding-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: flex-start;
+  background-color: black;
+  color: white;
+}
+footer .litsenziya{
+  width: 335px;
+  height: auto;
+  text-align: justify;
+}
+.litsenziya-heading{
+  font-size: 21px;
+  font-weight: 700;
+}
+.litsenziya-text{
+  margin-top: 19px;
+  font-size: 17px;
+  font-weight: 500;
+}
+.footer-property ul{
+  margin-left: 135px;
+}
+.footer-property{
+  display: flex;
+  position: sticky;
+  z-index: 1;
+  margin-top: 5px;
+  min-width:1171px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: flex-start;
+  background-color: black;
+  color: white;   
+}
+footer .footer-list2 li a {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-list1{
+  list-style: none;
+}
+.bold-word{
+  font-size: 21px;
+  font-weight: 700;
+}
+.footer-list1 li a{
+  text-decoration:none;
+  font-size:17px;
+  font-weight: 500;
+  color: white;
+}
+
+
+.footer-list1 li a{
+  text-decoration:none;
+  font-size:17px;
+  font-weight: 500;
+  color: white;
+}
+.footer-list2{
+  list-style: none;
+}
+.footer-list2 li a{
+  text-decoration:none;
+  font-size:17px;
+  font-weight: 500;
+  color: white;
+  transition: 0.5s;
+}
+
+.footer-property ul .non-bold{
+  padding-left: 11px;
+}
+.footer-list2 li a p{
+  padding-left: 5px;
+}
+.footer-list1 .non-bold {
+  padding-top: 9px;
+}
+.footer-list2 .non-bold {
+  padding-top: 11px;
+}
+.footer-property ul .non-bold a:hover{
+  color: #00BAFC;
+}
+
+
